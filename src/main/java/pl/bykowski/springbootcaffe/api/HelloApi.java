@@ -1,4 +1,4 @@
-package pl.bykowski.springbootcaffe;
+package pl.bykowski.springbootcaffe.api;
 
 import org.apache.tomcat.jni.Local;
 import org.springframework.beans.factory.annotation.Autowired;

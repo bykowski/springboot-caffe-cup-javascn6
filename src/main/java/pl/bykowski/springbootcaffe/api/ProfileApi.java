@@ -1,4 +1,4 @@
-package pl.bykowski.springbootcaffe;
+package pl.bykowski.springbootcaffe.api;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;

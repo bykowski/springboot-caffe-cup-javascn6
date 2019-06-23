@@ -1,9 +1,6 @@
-package pl.bykowski.springbootcaffe;
+package pl.bykowski.springbootcaffe.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Coffee {
@@ -13,6 +10,28 @@ public class Coffee {
     private Long id;
     private String name;
     private String type;
+
+    @OneToOne
+    private Cup cup;
+
+    @ManyToOne
+    private Cafeteria cafeteria;
+
+    public Cafeteria getCafeteria() {
+        return cafeteria;
+    }
+
+    public void setCafeteria(Cafeteria cafeteria) {
+        this.cafeteria = cafeteria;
+    }
+
+    public Cup getCup() {
+        return cup;
+    }
+
+    public void setCup(Cup cup) {
+        this.cup = cup;
+    }
 
     public Coffee() {
     }
